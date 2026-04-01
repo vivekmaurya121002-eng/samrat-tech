@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #154D7A;
+        }
+
+/* Hide hamburger on PC */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+            footer {
+            background: #0d1b2a;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 140px;
+        }
+
+        /* Sections */
+        .footer-box {
+            max-width: 500px;
+        }
+
+        .footer-box h3 {
+            margin-bottom: 15px;
+            color: #00c6ff;
+            font-size: 30px;
+            margin-left: 0px;
+        }
+
+        .footer-box p {
+            font-size: 14px;
+            
+            font-size: 20px;
+            padding: 0%;
+            margin-left: 0px;
+            margin-right:50px ;
+
+        }
+
+        /* Links */
+        .footer-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-box ul li {
+            margin: 8px 0;
+        }
+
+        .footer-box ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+            font-weight: bolder;
+            font-style: italic;
+
+        }
+
+        .footer-box ul li a:hover {
+            color: #00c6ff;
+            padding-left: 5px;
+        }
+
+        /* Social */
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            color: #00c6ff;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: white;
+            transform: scale(1.3);
+        }
+
+        /* Bottom */
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid #444;
+            padding-top: 15px;
+            font-size: 14px;
+        }
+ .afooter-box{
+          color:#00C6FF;
+          margin-left: 950px;
+          margin-top: -130px;
+          font-size: 0px;
+
+        }
+        .social-icons img {
+    width: 35px;
+    margin:5px;
+    
+    margin-bottom: 0px;
+   gap: 40px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+ .social-icons{
+margin-left: -50px;
+
+ }
+
+/* Hover effect */
+.social-icons img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px #00c6ff);
+}
+
+        /* Container */
+        .contact-page {
+            align-items: center;
+           margin-top: 100px;
+            width: auto;
+        }
+
+        /* Form Box */
+        .form-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 550px;
+           margin-top: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            text-align: center;
+            animation: fadeIn 1s ease;
+            margin-bottom: 100px;
+        }
+
+        .form-box h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Inputs */
+        .form-box input,
+        .form-box textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .form-box input:focus,
+        .form-box textarea:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px #007bff;
+        }
+
+        /* Button */
+        .form-box button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .form-box button:hover {
+            background: #0056b3;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+header {
+            background: #0d1b2a;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            margin-top: 0px;
+            width: auto;
+    top: 0;
+    z-index: 1000; 
+
+    background: #0d1b2a;
+    padding: 15px 50px;
+
+           
+        }
+
+        .logo img{
+    height: auto;
+    width: 250px;
+}
+        .logo {
+           size: 5px;
+            font-size: 2px;
+            font-weight: bold;
+            letter-spacing: 2px;
+           
+            
+        }
+
+
+
+nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+           
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        /* Hover underline animation */
+        nav ul li a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #00c6ff;
+            left: 0;
+            bottom: -5px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a:hover {
+            color: #00c6ff;
+        }
+
+
+
+@media (max-width: 768px) {
+
+
+.round{
+    height: 50vh;
+    width: 50vh;
+    margin-top: 0;
+    margin-left: 5%;
+   
+    
+}
+ .logo img {
+    height: auto;
+    width: 150px;
+}
+#sol{
+    font-size: 14px;
+
+}
+.card img{
+    width: auto;
+}
+
+.card{
+    padding: 0;
+}
+.card2{
+    margin: 10px;
+    margin-top: 20px;
+}
+
+#feedback{
+   
+    font-size: 25px;
+     padding-bottom:30px;
+}
+
+.footer-container{
+    display: block;
+
+}
+.afooter-box{
+    margin: 0;
+}
+.footer-box p{
+    margin-right: 0;
+    font-size: 14px;
+}
+
+.footer-box{
+     font-size: 14px;
+}
+.footer-box ul{
+    font-size: 14px;
+}
+.social-icons{
+    margin-left:0px;
+}
+
+.card p{
+font-size: 15px;
+margin: 10px;
+}
+
+.card h3{
+    font-size: 20px;
+}
+
+.about{
+    margin: 15px;
+    font-size: 15px;
+}
+
+
+.display{
+display: flex;
+flex-wrap: wrap;
+padding: 0;
+margin: 15px;
+border-radius: 20px;
+
+
+}
+.typing{
+    font-size: 20px;
+    
+     margin-left: 5%;
+     margin-top: 1%;
+}
+
+.form-box{
+    width: 70%;
+}
+
+
+
+
+  header {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+  /* FORCE HIDE MENU */
+  nav ul {
+    display: none !important;
+    flex-direction: column;
+    background: #0d1b2a;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li {
+    padding: 12px 0;
+  }
+
+  /* SHOW WHEN CLICKED */
+  nav.active ul {
+    display: flex !important;
+  }
+}
+
+
+
+
+
+@media (min-width: 483px) and (max-width: 1023px)  {
+    .footer-container {
+        display: block !important ;
+    }
+
+.footer-box {
+    max-width: 500px; 
+}
+}
+
+@media (min-width: 760px) and (max-width: 1023px) {
+   .social-icon {
+        color: #00C6FF;
+        margin-left: 59% !important;
+    }
+  
+
+} 
+    
+@media (min-width: 760px)and (max-width: 1022px){
+
+.social-icons {
+    margin-left: -140%;
+}
+
+}
+  
+  @media (min-width: 1440px){
+
+
+.social-icons{
+
+    margin-left: 270px;
+}
+
+
+
+  }
+        
+.footer-box p {
+
+    font-size: 13px !important;
+}
+
+
+@media (min-width: 760px) and (max-width: 1440px) {
+
+  .afooter-box {
+        color: #00C6FF;
+        margin-left: 59% !important;
+    }
+
+
+}
+        /* Animated Gradient Mesh */
+        
+        
+
+       
+
+        /* Center Container */
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+             background-color: #ccc;
+            
+        }
+
+        /* Glass Card */
+        .card {
+            max-width: 700px;
+            height: 400px;
+            background-color: #ccc;
+            padding: 35px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(15px);
+            text-align: center;
+           
+            transition: 0.4s;
+        }
+
+        /* Hover Lift */
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Heading */
+        .card h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #00c6ff, #007bff);
+            /* stylelint-disable-next-line */
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* Text */
+        .card p {
+            color: #0D1B2A;
+            font-size: 16px;
+            margin-bottom: 25px;
+            font-weight: 600;
+            word-spacing: 5px;
+        }
+
+        .info {
+            margin: 8px 0;
+            font-size: 15px;
+            font-weight: 600;
+            word-spacing: 5px;
+        }
+
+        
+
+        /* Responsive */
+        @media (max-width: 500px) {
+            .card {
+                padding: 25px;
+                margin: 20px;
+            }
+
+            .card h1 {
+                font-size: 24px;
+            }
+            .info{
+                font-size: 10px;
+                margin: 0px;
+            }
+           h6{
+            font-size: 28px !important;
+           }
+
+
+           .footer-container {
+    display: flex ;
+    justify-content: left !important;
+        }
+    }
+
+        h6{
+            font-size: 50px;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #ccc;
+           
+        }
+
+
+
+
+        @media (min-width: 760px){
+
+.afooter-box {
+    color: #00C6FF;
+    margin-left: 518px;
+    margin-top: -10px;
+    font-size: 0px;
+}
+        }
+     
+
+
+    
+/* Footer Main */
+footer {
+    background: #0d1b2a;
+    color: white;
+    padding: 40px 20px;
+}
+
+/* Container */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Sections */
+.footer-box {
+    max-width: 300px;
+}
+
+/* Heading */
+.footer-box h3 {
+    margin-bottom: 15px;
+    color: #00c6ff;
+    font-size: 22px;
+}
+
+/* Paragraph */
+.footer-box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Links */
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin: 8px 0;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.footer-box ul li a:hover {
+    color: #00c6ff;
+    padding-left: 5px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons img {
+    width: 35px;
+    margin: 5px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px #00c6ff);
+}
+
+/* Bottom Line */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+      
+    </style>
+</head>
+
+<body>
+
+ <header>
+  <div class="logo"><img src="C:\Users\Yash Maurya\Desktop\codes\c\smart tech solution\Untitled design (1).png"></div>
+
+  
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="/intro.html">Services</a></li>
+      <li><a href="/intro.html\#about1">About</a></li>
+      <li><a href="contactus.html">Contact us</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="bg"></div>
+
+<div class="container">
+    <div class="card">
+
+        <h1>Connect With Innovation </h1><br>
+
+        <p>
+            We design intelligent, secure, and scalable digital solutions 
+            that empower your business to thrive in the modern world.
+        </p><br>
+
+        <div class="info">📍 Ground Floor, plot No.17, New Bharat Colony, Mata Amritanandmayi Marg, New Bharat Colony, RWA Awadh Enclave, Faridabad, Haryana, 121002</div>
+        <br>
+        <div class="info">📞 +91-7897648842</div><br>
+        <div class="info">📧 sales@samrattechitsolutions.com</div>
+
+
+
+        
+
+    </div>
+</div>
+<h6>FOR&nbsp; ANY&nbsp; QUERY</h6>
+
+<div class="contact-page">
+
+ <center>   
+<div class="form-box">
+        
+
+        <form>
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <input type="tel" placeholder="Your Phone"><br>
+            <textarea rows="4" placeholder="Your Message"></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</div>
+</center>
+
+
+
+
+<footer>
+
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-box">
+            <h3>Samrat Tech</h3>
+            <p>
+                We provide smart IT solutions to help your<br> business grow 
+                efficiently and securely.
+            </p>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about1">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+            <h3>Connect Us</h3>
+            <p>📍 Ground Floor, plot No.17, New Bharat Colony, Mata Amritanandmayi Marg, New Bharat Colony, RWA Awadh Enclave, Faridabad, Haryana, 121002</p>
+            <p>📞 +91-7897648842</p>
+            <p>📧 sales@samrattechitsolutions.com</p>
+        </div>
+
+        <!-- Social -->
+         <div class="afooter-box">
+            <h3></h3>
+            <div class="social-icons">
+                <a href="#"><img src="C:\Users\Yash Maurya\Desktop\codes\c\smart tech solution\_89649395_instagram_logo_976.jpg"></a>
+                <a href="#"><img src="C:\Users\Yash Maurya\Desktop\codes\c\smart tech solution\linkedin-logo-icon_1273375-1174.jpg"></a>
+                <a href="#"><img src="C:\Users\Yash Maurya\Desktop\codes\c\smart tech solution\Logo_de_Facebook.png"></a>
+                <a href="#"><img src="C:\Users\Yash Maurya\Desktop\codes\c\smart tech solution\x.png"></a>
+            </div>
+         <br>
+         <br>
+      
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        © 2026 Smart Tech | All Rights Reserved
+    </div>
+
+</footer>
+
+
+
+
+<script>
+document.getElementById("menu-toggle").onclick = function () {
+  document.getElementById("nav-menu").classList.toggle("active");
+};
+
+</script>
+  </body>
+</html>
