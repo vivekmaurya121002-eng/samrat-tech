@@ -730,7 +730,11 @@ margin-left: 50px;
 
 /*  tab */
 
-
+@media (max-width: 500px){
+.connect-section {
+    height: 74vh !important ;
+}
+}
 @media (min-width: 768px) and (max-width: 1300px) {
 
 
