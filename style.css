@@ -743,7 +743,7 @@ margin-left: 50px;
 footer {
     background: #0d1b2a;
     color: white;
-    padding: 40px 50px;
+    padding: 40px 50px !important;
 }
 
 
