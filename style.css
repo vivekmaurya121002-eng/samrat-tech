@@ -217,7 +217,7 @@ body{
             align-items: center;
             position: sticky;
     top: 0;
-     
+     z-index: 1000; 
 
     background: #0d1b2a;
     padding: 15px 50px;
